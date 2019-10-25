@@ -1,5 +1,5 @@
 class School
-attr_accessor :name, :roster
+attr_accessor :name, :roster, :student, :grade
 
 def initialize(name)
   @name = name
@@ -7,7 +7,13 @@ def initialize(name)
 end
 
 def add_student(student, grade)
-  roster[grade] = []
-  roster[grade] << student
+  if roster.include?(grade) == true
+    roster[grade] << name
+  else
+    roster[grade] = [name]
+  end
+end
+    
+    
 end
 end
