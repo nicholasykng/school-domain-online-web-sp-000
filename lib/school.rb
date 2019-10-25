@@ -14,4 +14,6 @@ def add_student(student, grade)
   end
 end
 
+def grade(grade_level)
+  return grade_level
 end
