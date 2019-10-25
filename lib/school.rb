@@ -8,11 +8,10 @@ end
 
 def add_student(student, grade)
   if roster.include?(grade) == true
-    roster[grade] << name
+    roster[grade] << student
   else
-    roster[grade] = [name]
+    roster[grade] = [student]
   end
 end
-
 
 end
