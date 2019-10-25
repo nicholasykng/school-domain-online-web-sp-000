@@ -15,6 +15,6 @@ def add_student(student, grade)
 end
 
 def grade(grade)
-  return roster[:grade]
+  return roster[grade]
 end
 end
